@@ -1,4 +1,4 @@
-use std::sync::{Arc, RwLock};
+use std::sync::RwLock;
 
 pub struct Service1 {
     some_data: RwLock<i32>,

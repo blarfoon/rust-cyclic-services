@@ -8,7 +8,7 @@ impl Service2 {
     }
 }
 
-impl ServicesInner<'_, &Service2> {
+impl ServicesInner<'_, Service2> {
     pub fn do_something(&self) {
         println!("Service2::do_something()");
     }
