@@ -1,14 +1,12 @@
 use std::sync::{Arc, RwLock};
 
 pub struct Service1 {
-    services: *const super::Services,
     some_data: RwLock<i32>,
 }
 
 impl Service1 {
-    pub fn new(services: *const super::Services) -> Service1 {
+    pub fn new() -> Service1 {
         Service1 {
-            services,
             some_data: RwLock::new(0),
         }
     }
